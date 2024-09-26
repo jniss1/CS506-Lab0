@@ -44,7 +44,7 @@ def nearest_neighbor(target_vector, vectors):
     ## loop through vectors, calculate cosine similarity, is more similar than store, replace, return
     curr_closest = [0,0] ## index, score
     temp_score = 0
-    for i in range(0, len(vectors)):
+    for i in range(0, len(vectors)-1):
         temp_score = cosine_similarity(vectors[i], target_vector)
         if temp_score > curr_closest[1]:
             curr_closest[0] = i
