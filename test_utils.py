@@ -28,7 +28,7 @@ def test_nearest_neighbor():
     target = np.array([0,0,0])
     vectors = np.array([[0,0,0],[1,1,1],[2,2,2]])
     
-    result = nearest_neighbor() ### YOUR CODE HERE
+    result = nearest_neighbor(target, vectors) ### YOUR CODE HERE
     
     expected_index = 0 ### YOUR CODE HERE
     
